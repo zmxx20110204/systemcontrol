@@ -4,21 +4,21 @@
 #include <string>
 #include <bits/stdc++.h>
 
-#define SERVER_IP "180.101.45.182"
-#define SERVER_PORT 17967
+#define SERVER_IP "xxx.xxx.xxx.xxx"
+#define SERVER_PORT xxxx
 
 static SOCKET clientSocket = INVALID_SOCKET;
 static bool isConnected = false;
 const char* start = "start";
 
-//Æ´½Ó×Ö·û´® 
+//æ‹¼æ¥å­—ç¬¦ä¸² 
 std::string mergeStrings(const char* str1, const char* str2) {
     if (!str1) str1 = "";
     if (!str2) str2 = "";
-    return std::string(str1) + str2; // Ö±½ÓÆ´½Ó
+    return std::string(str1) + str2; // ç›´æ¥æ‹¼æ¥
 }
 
-//·şÎñÆ÷Á¬½Ó
+//æœåŠ¡å™¨è¿æ¥
 bool ConnectToServer() {
     WSADATA wsaData;
     if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
