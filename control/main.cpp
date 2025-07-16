@@ -8,8 +8,8 @@
 #include <map>
 #pragma comment(lib, "ws2_32.lib")
 
-#define SERVER_IP "180.101.45.182"
-#define SERVER_PORT 17967
+#define SERVER_IP "xxx.xxx.xxx.xxx"
+#define SERVER_PORT xxxx
 #define IDC_HTML 1001
 #define IDC_SEND 1002
 
@@ -101,7 +101,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		return 0;
 	}
 
-	hwnd = CreateWindowEx(WS_EX_CLIENTEDGE,"WindowClass","systemøÿ÷∆",WS_VISIBLE|WS_OVERLAPPEDWINDOW,
+	hwnd = CreateWindowEx(WS_EX_CLIENTEDGE,"WindowClass","system¬ø√ò√ñ√Ü",WS_VISIBLE|WS_OVERLAPPEDWINDOW,
 		CW_USEDEFAULT, /* x */
 		CW_USEDEFAULT, /* y */
 		500, /* width */
@@ -112,7 +112,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
         WS_CHILD | WS_VISIBLE | WS_BORDER | ES_AUTOHSCROLL | ES_MULTILINE | ES_WANTRETURN,
         10, 10, 350, 50, hwnd, (HMENU)IDC_HTML, GetModuleHandle(NULL), NULL);
     
-    HWND hSend = CreateWindow("BUTTON", "¥Úø™Õ¯÷∑",
+    HWND hSend = CreateWindow("BUTTON", "¬¥√≤¬ø¬™√ç√∏√ñ¬∑",
         WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
         370, 10, 100, 50, hwnd, (HMENU)IDC_SEND, GetModuleHandle(NULL), NULL);
 
